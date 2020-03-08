@@ -14,23 +14,17 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtil 
 {
     
-	public static String getUserName(String sheetname) throws IOException {
+	public static String[][] getUserName(String sheetname) throws IOException {
 		FileInputStream file = new FileInputStream("C://Users//ksiddiqu//OneDrive - Capgemini//Documents//New folder//TestData.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheet(sheetname);
 		int rowcount = sheet.getLastRowNum();
 		int colcount = sheet.getRow(0).getLastCellNum();
-		String val = "";
-		List<String> userSet = new ArrayList<>();
-		for (int i = 1; i <= rowcount; i++) {
-			XSSFRow row = sheet.getRow(i);
+		String val[][] = new String[rowcount][colcount];
+		for (int i = 0; i < rowcount; i++) {
 			for (int j = 0; j < colcount; j++) {
-				val = row.getCell(0).toString();
-				userSet.add(val);
+				val[i][j] = sheet.getRow(i +1).getCell(j).toString();
 			}
-			
-			
-			return val;
 		}
 		return val;
 	}
@@ -50,9 +44,7 @@ public class ExcelUtil
 		
 			}
 		}
-		return data;	
-			
-			
+		return data;			
 		}
 	
 	

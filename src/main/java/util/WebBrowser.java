@@ -35,6 +35,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import base.TestBase;
+//import base.extent_reporting;
 
 public class WebBrowser extends TestBase 
 {
@@ -89,11 +90,28 @@ public class WebBrowser extends TestBase
 	}
 	
 	
+	public void click(WebElement element, String stepdescription ) throws IOException
+	{
+		System.out.println(Thread.currentThread().getStackTrace()[1].getClassName()+ "." + Thread.currentThread().getStackTrace()[1].getMethodName() + " is running.. ");
+		try 
+		{
+		element.click();
+		extent_reporting.executeReport(stepdescription, "PASS");
+		}
+		catch (Exception e)
+		{
+			System.out.println(Thread.currentThread().getStackTrace()[1].getClassName()+ "." + 
+			Thread.currentThread().getStackTrace()[1].getMethodName() + " is throwing error.. " + e.getMessage());
+			extent_reporting.executeReport(stepdescription, "FAIL");
+			//driver.quit();
+		}
+	}
 	
 	public void click(WebElement element) {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getClassName()+ "." + Thread.currentThread().getStackTrace()[1].getMethodName() + " is running.. ");
 		try {
 			element.click();
+			
 		} catch (Exception e) {
 			System.out.println(Thread.currentThread().getStackTrace()[1].getClassName()+ "." + Thread.currentThread().getStackTrace()[1].getMethodName() + " is throwing error.. " + e.getMessage());
 		}
@@ -568,6 +586,21 @@ public class WebBrowser extends TestBase
 				System.out.println(Thread.currentThread().getStackTrace()[1].getClassName() + "." + Thread.currentThread().getStackTrace()[1].getMethodName() + " is throwing error..." + e.getMessage());
 		}
 		return str;
+	}
+	public void sendKeys(WebElement element, String value, String stepdescription) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getClassName()+ "." + Thread.currentThread().getStackTrace()[1].getMethodName() + " is running.. ");
+		try 
+		{
+		element.sendKeys(value);
+		extent_reporting.executeReport(stepdescription, "PASS");
+		}
+		catch (Exception e)
+		{
+			System.out.println(Thread.currentThread().getStackTrace()[1].getClassName()+ "." + 
+			Thread.currentThread().getStackTrace()[1].getMethodName() + " is throwing error.. " + e.getMessage());
+			extent_reporting.executeReport(stepdescription, "FAIL");
+		}
+
 	}
 	
 }
