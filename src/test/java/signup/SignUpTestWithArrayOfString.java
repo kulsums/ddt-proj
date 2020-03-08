@@ -8,12 +8,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.TestBase;
+import junit.framework.Assert;
 import pages.DemoBlaze;
 import util.ExcelUtil;
 import util.WebBrowser;
 import util.extent_reporting;
 
-public class SignUpTest extends TestBase {
+public class SignUpTestWithArrayOfString extends TestBase {
     
 	WebBrowser activebrwser = new WebBrowser();
 	DemoBlaze demo;
@@ -28,17 +29,22 @@ public class SignUpTest extends TestBase {
 	}
 	
 	@DataProvider
-	public Object[][] getUser() throws IOException {
-		Object data[][] = ExcelUtil.getUserName_("login");
+	public  String[][] getUser() throws IOException {
+		String[][] data = ExcelUtil.getUserName("login");
 		return data;
 	}
     
 	@Test(dataProvider="getUser")
 	public void verify_signup_with_set_of_data(String username, String password) throws IOException {
-		activebrwser.click(demo.signup_link);
-		activebrwser.sendKeys(demo.user_text, username);
-		activebrwser.wait(2);
-		activebrwser.sendKeys(demo.pwd_text, password);
+		activebrwser.click(demo.signup_link , "Activate signup link on homepage");
+		activebrwser.wait(1);
+		activebrwser.sendKeys(demo.user_text, username , "Enter user name as " + username);
+		activebrwser.wait(3);
+		activebrwser.sendKeys(demo.pwd_text, password, "Enter password to password field");
+		activebrwser.click(demo.signUp_btn , "Click on signup button post entering data");
+		String alerttext = activebrwser.getAlertText();
+		//activebrwser.closeAlert();
+		Assert.assertTrue(alerttext.contains("Sign up successful.") || alerttext.contains("This user already exist."));
 	}
 	
 	@AfterMethod
