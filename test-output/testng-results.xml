@@ -1,29 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98585" started-at="2020-03-05T06:29:53Z" finished-at="2020-03-05T06:31:32Z">
+  <suite name="Default suite" duration-ms="118383" started-at="2020-03-08T07:39:04Z" finished-at="2020-03-08T07:41:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98585" started-at="2020-03-05T06:29:53Z" finished-at="2020-03-05T06:31:32Z">
+    <test name="Default test" duration-ms="118383" started-at="2020-03-08T07:39:04Z" finished-at="2020-03-08T07:41:02Z">
       <class name="signup.SignUpTest">
-        <test-method status="PASS" signature="testStart()[pri:0, instance:signup.SignUpTest@dbf57b3]" name="testStart" is-config="true" duration-ms="195" started-at="2020-03-05T06:29:53Z" finished-at="2020-03-05T06:29:53Z">
+        <test-method status="PASS" signature="testStart()[pri:0, instance:signup.SignUpTest@61862a7f]" name="testStart" is-config="true" duration-ms="247" started-at="2020-03-08T07:39:04Z" finished-at="2020-03-08T07:39:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTest@dbf57b3]" name="setup" is-config="true" duration-ms="8020" started-at="2020-03-05T06:29:53Z" finished-at="2020-03-05T06:30:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTest@61862a7f]" name="setup" is-config="true" duration-ms="8201" started-at="2020-03-08T07:39:35Z" finished-at="2020-03-08T07:39:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data()[pri:0, instance:signup.SignUpTest@dbf57b3]" name="verify_signup_with_set_of_data" duration-ms="50497" started-at="2020-03-05T06:30:01Z" finished-at="2020-03-05T06:30:51Z">
+        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTest@61862a7f]" name="verify_signup_with_set_of_data" duration-ms="33169" started-at="2020-03-08T07:39:43Z" data-provider="getUser" finished-at="2020-03-08T07:40:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testkulsum]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testkulsum]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTest@dbf57b3]" name="teardownend" is-config="true" duration-ms="929" started-at="2020-03-05T06:31:08Z" finished-at="2020-03-05T06:31:09Z">
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTest@61862a7f]" name="teardownend" is-config="true" duration-ms="1008" started-at="2020-03-08T07:40:16Z" finished-at="2020-03-08T07:40:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:signup.SignUpTest@dbf57b3]" name="teardown" is-config="true" duration-ms="300" started-at="2020-03-05T06:31:32Z" finished-at="2020-03-05T06:31:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTest@61862a7f]" name="setup" is-config="true" duration-ms="8304" started-at="2020-03-08T07:40:17Z" finished-at="2020-03-08T07:40:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTest@61862a7f]" name="verify_signup_with_set_of_data" duration-ms="6823" started-at="2020-03-08T07:40:26Z" data-provider="getUser" finished-at="2020-03-08T07:40:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testfatima]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testfatima]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_signup_with_set_of_data -->
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTest@61862a7f]" name="teardownend" is-config="true" duration-ms="1014" started-at="2020-03-08T07:40:32Z" finished-at="2020-03-08T07:40:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownend -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTest@61862a7f]" name="setup" is-config="true" duration-ms="6671" started-at="2020-03-08T07:40:33Z" finished-at="2020-03-08T07:40:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTest@61862a7f]" name="verify_signup_with_set_of_data" duration-ms="8118" started-at="2020-03-08T07:40:40Z" data-provider="getUser" finished-at="2020-03-08T07:40:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testmaroof]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testmaroof]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_signup_with_set_of_data -->
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTest@61862a7f]" name="teardownend" is-config="true" duration-ms="1029" started-at="2020-03-08T07:40:48Z" finished-at="2020-03-08T07:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownend -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTest@61862a7f]" name="setup" is-config="true" duration-ms="5354" started-at="2020-03-08T07:40:49Z" finished-at="2020-03-08T07:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTest@61862a7f]" name="verify_signup_with_set_of_data" duration-ms="6663" started-at="2020-03-08T07:40:55Z" data-provider="getUser" finished-at="2020-03-08T07:41:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[k523]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[k523]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_signup_with_set_of_data -->
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTest@61862a7f]" name="teardownend" is-config="true" duration-ms="1066" started-at="2020-03-08T07:41:01Z" finished-at="2020-03-08T07:41:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownend -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:signup.SignUpTest@61862a7f]" name="teardown" is-config="true" duration-ms="399" started-at="2020-03-08T07:41:02Z" finished-at="2020-03-08T07:41:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

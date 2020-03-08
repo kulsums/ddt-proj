@@ -35,6 +35,27 @@ public class ExcelUtil
 		return val;
 	}
 	
+	public static Object[][] getUserName_(String sheetname) throws IOException {
+		FileInputStream file = new FileInputStream("C://Users//ksiddiqu//OneDrive - Capgemini//Documents//New folder//TestData.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheet(sheetname);
+		int rowcount = sheet.getLastRowNum();
+		int colcount = sheet.getRow(0).getLastCellNum();
+		
+		Object[][] data = new Object[rowcount][colcount];
+		
+		for (int i = 0; i < rowcount; i++) {
+			for (int k = 0; k < colcount; k++) {
+				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+		
+			}
+		}
+		return data;	
+			
+			
+		}
+	
+	
 	public static void writeTestResult(String value, String sheetname) throws IOException {
 		FileOutputStream file = new FileOutputStream("C://Users//ksiddiqu//OneDrive - Capgemini//Documents//New folder//TestResult.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook();
