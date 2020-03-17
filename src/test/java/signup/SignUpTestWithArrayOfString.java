@@ -42,8 +42,10 @@ public class SignUpTestWithArrayOfString extends TestBase {
 		activebrwser.wait(3);
 		activebrwser.sendKeys(demo.pwd_text, password, "Enter password to password field");
 		activebrwser.click(demo.signUp_btn , "Click on signup button post entering data");
-		String alerttext = activebrwser.getAlertText();
+		
 		//activebrwser.closeAlert();
+		activebrwser.wait(2);
+		String alerttext = activebrwser.getAlertText();
 		Assert.assertTrue(alerttext.contains("Sign up successful.") || alerttext.contains("This user already exist."));
 	}
 	
