@@ -1,117 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61965" started-at="2020-03-17T07:42:43Z" finished-at="2020-03-17T07:43:45Z">
+  <suite name="Default suite" duration-ms="19914" started-at="2020-06-10T09:02:46Z" finished-at="2020-06-10T09:03:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61965" started-at="2020-03-17T07:42:43Z" finished-at="2020-03-17T07:43:45Z">
-      <class name="signup.SignUpTestWithArrayOfString">
-        <test-method status="PASS" signature="testStart()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="testStart" is-config="true" duration-ms="216" started-at="2020-03-17T07:42:43Z" finished-at="2020-03-17T07:42:43Z">
+    <test name="Default test" duration-ms="19914" started-at="2020-06-10T09:02:46Z" finished-at="2020-06-10T09:03:05Z">
+      <class name="signup.AboutUsTest">
+        <test-method status="PASS" signature="testStart()[pri:0, instance:signup.AboutUsTest@1794d431]" name="testStart" is-config="true" duration-ms="505" started-at="2020-06-10T09:02:45Z" finished-at="2020-06-10T09:02:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="7127" started-at="2020-03-17T07:42:44Z" finished-at="2020-03-17T07:42:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:signup.AboutUsTest@1794d431]" name="setup" is-config="true" duration-ms="9770" started-at="2020-06-10T09:02:46Z" finished-at="2020-06-10T09:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="9188" started-at="2020-03-17T07:42:51Z" data-provider="getUser" finished-at="2020-03-17T07:43:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testkulsum]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testkulsum]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="verify_about_us_modal_is_displayed()[pri:0, instance:signup.AboutUsTest@1794d431]" name="verify_about_us_modal_is_displayed" duration-ms="1499" started-at="2020-06-10T09:02:55Z" finished-at="2020-06-10T09:02:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="957" started-at="2020-03-17T07:43:00Z" finished-at="2020-03-17T07:43:01Z">
+        </test-method> <!-- verify_about_us_modal_is_displayed -->
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.AboutUsTest@1794d431]" name="teardownend" is-config="true" duration-ms="1221" started-at="2020-06-10T09:02:57Z" finished-at="2020-06-10T09:02:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="4484" started-at="2020-03-17T07:43:01Z" finished-at="2020-03-17T07:43:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:signup.AboutUsTest@1794d431]" name="setup" is-config="true" duration-ms="4147" started-at="2020-06-10T09:02:58Z" finished-at="2020-06-10T09:03:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="9298" started-at="2020-03-17T07:43:06Z" data-provider="getUser" finished-at="2020-03-17T07:43:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testfatima]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testfatima]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="verify_user_is_able_to_close_about_us_modal()[pri:0, instance:signup.AboutUsTest@1794d431]" name="verify_user_is_able_to_close_about_us_modal" duration-ms="2079" started-at="2020-06-10T09:03:02Z" finished-at="2020-06-10T09:03:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="954" started-at="2020-03-17T07:43:15Z" finished-at="2020-03-17T07:43:16Z">
+        </test-method> <!-- verify_user_is_able_to_close_about_us_modal -->
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.AboutUsTest@1794d431]" name="teardownend" is-config="true" duration-ms="1163" started-at="2020-06-10T09:03:04Z" finished-at="2020-06-10T09:03:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="4858" started-at="2020-03-17T07:43:16Z" finished-at="2020-03-17T07:43:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="8866" started-at="2020-03-17T07:43:21Z" data-provider="getUser" finished-at="2020-03-17T07:43:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testmaroof]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testmaroof]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="1014" started-at="2020-03-17T07:43:30Z" finished-at="2020-03-17T07:43:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="4707" started-at="2020-03-17T07:43:31Z" finished-at="2020-03-17T07:43:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="8668" started-at="2020-03-17T07:43:35Z" data-provider="getUser" finished-at="2020-03-17T07:43:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[k523]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[k523]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="954" started-at="2020-03-17T07:43:44Z" finished-at="2020-03-17T07:43:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardown" is-config="true" duration-ms="349" started-at="2020-03-17T07:43:45Z" finished-at="2020-03-17T07:43:45Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:signup.AboutUsTest@1794d431]" name="teardown" is-config="true" duration-ms="634" started-at="2020-06-10T09:03:06Z" finished-at="2020-06-10T09:03:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- signup.SignUpTestWithArrayOfString -->
+      </class> <!-- signup.AboutUsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
