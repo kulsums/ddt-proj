@@ -33,7 +33,7 @@ public class SignUpTest extends TestBase {
 		return data;
 	}
     
-	@Test(dataProvider="getUser")
+	@Test(dataProvider="getUser", testName = "inputdata")
 	public void verify_signup_with_set_of_data(String username, String password) throws IOException {
 		activebrwser.click(demo.signup_link);
 		activebrwser.sendKeys(demo.user_text, username);
