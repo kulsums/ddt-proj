@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="signup.SignUpTest">
+      <class name="login.LoginTest">
         <methods>
+          <include name="teardownend"/>
           <include name="setup"/>
-          <include name="verify_signup_with_set_of_data"/>
+          <include name="Verify_no_input_password"/>
           <include name="teardown"/>
           <include name="testStart"/>
-          <include name="teardownend"/>
         </methods>
-      </class> <!-- signup.SignUpTest -->
+      </class> <!-- login.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

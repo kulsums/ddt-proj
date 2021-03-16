@@ -18,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -602,6 +603,20 @@ public class WebBrowser extends TestBase
 		}
 
 	}
+	public void switchToAcceptAlert() {
+		try {
+			driver.switchTo().alert().accept();
+		} catch (Exception e) {
+				System.out.println(Thread.currentThread().getStackTrace()[1].getClassName() + "." + Thread.currentThread().getStackTrace()[1].getMethodName() + " is throwing error..." + e.getMessage());
+		}
+		
+	}
+	public void sendKeys(Keys tab, WebElement element) {
+		element.sendKeys(tab);
+		
+	}
+	
+	
 	
 }
 
