@@ -50,13 +50,13 @@ public class extent_reporting extends WebBrowser
 		
 		
 		
-		 if(Stepstatus.equals("PASS"))
+		 if(Stepstatus.contains("PASS"))
 		 {
 			 exTest.log(LogStatus.PASS,stepdescription + exTest.addScreenCapture(System.getProperty("user.dir") +
 					 "\\test-output\\TestExecutionReports\\screenshots\\" + timeStamp + ".jpg")  );
 			 
 		 }		 
-		 if(Stepstatus.equals("FAIL"))
+		 if(Stepstatus.contains("FAIL"))
 		 {
 			 exTest.log(LogStatus.FAIL,stepdescription + exTest.addScreenCapture(System.getProperty("user.dir") + 
 					 "\\test-output\\TestExecutionReports\\screenshots\\" +timeStamp + ".jpg"));

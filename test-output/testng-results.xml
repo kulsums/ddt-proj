@@ -1,177 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="119203" started-at="2021-03-16T04:24:50Z" finished-at="2021-03-16T04:26:49Z">
+  <suite name="Default suite" duration-ms="13871" started-at="2021-03-16T08:25:18Z" finished-at="2021-03-16T08:25:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="119203" started-at="2021-03-16T04:24:50Z" finished-at="2021-03-16T04:26:49Z">
-      <class name="login.LoginTest">
-        <test-method status="PASS" signature="testStart()[pri:0, instance:login.LoginTest@239963d8]" name="testStart" is-config="true" duration-ms="210" started-at="2021-03-16T04:24:49Z" finished-at="2021-03-16T04:24:50Z">
+    <test name="Default test" duration-ms="13871" started-at="2021-03-16T08:25:18Z" finished-at="2021-03-16T08:25:31Z">
+      <class name="login.SchemaProfilePage">
+        <test-method status="PASS" signature="testStart()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="testStart" is-config="true" duration-ms="239" started-at="2021-03-16T08:25:17Z" finished-at="2021-03-16T08:25:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="9124" started-at="2021-03-16T04:24:50Z" finished-at="2021-03-16T04:24:59Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="setup" is-config="true" duration-ms="11470" started-at="2021-03-16T08:25:18Z" finished-at="2021-03-16T08:25:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:login.LoginTest@239963d8]" name="verify_signup_with_set_of_data" duration-ms="5511" started-at="2021-03-16T04:24:59Z" data-provider="getUser" finished-at="2021-03-16T04:25:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="Verify_presence_of_search_icon_on_home_page()[pri:1, instance:login.SchemaProfilePage@464bee09]" name="Verify_presence_of_search_icon_on_home_page" duration-ms="1127" started-at="2021-03-16T08:25:29Z" finished-at="2021-03-16T08:25:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1604" started-at="2021-03-16T04:25:05Z" finished-at="2021-03-16T04:25:07Z">
+        </test-method> <!-- Verify_presence_of_search_icon_on_home_page -->
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="teardownend" is-config="true" duration-ms="1247" started-at="2021-03-16T08:25:30Z" finished-at="2021-03-16T08:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="7091" started-at="2021-03-16T04:25:07Z" finished-at="2021-03-16T04:25:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:login.LoginTest@239963d8]" name="verify_signup_with_set_of_data" duration-ms="5261" started-at="2021-03-16T04:25:14Z" data-provider="getUser" finished-at="2021-03-16T04:25:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[validuser]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1457" started-at="2021-03-16T04:25:19Z" finished-at="2021-03-16T04:25:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="7635" started-at="2021-03-16T04:25:20Z" finished-at="2021-03-16T04:25:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:login.LoginTest@239963d8]" name="verify_signup_with_set_of_data" duration-ms="5148" started-at="2021-03-16T04:25:28Z" data-provider="getUser" finished-at="2021-03-16T04:25:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test456]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[validpassword]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1376" started-at="2021-03-16T04:25:33Z" finished-at="2021-03-16T04:25:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="7823" started-at="2021-03-16T04:25:35Z" finished-at="2021-03-16T04:25:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_login_page_load()[pri:1, instance:login.LoginTest@239963d8]" name="Verify_login_page_load" duration-ms="2296" started-at="2021-03-16T04:25:42Z" finished-at="2021-03-16T04:25:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_login_page_load -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1521" started-at="2021-03-16T04:25:45Z" finished-at="2021-03-16T04:25:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="8441" started-at="2021-03-16T04:25:46Z" finished-at="2021-03-16T04:25:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_login_page_form_elements()[pri:2, instance:login.LoginTest@239963d8]" name="Verify_login_page_form_elements" duration-ms="2864" started-at="2021-03-16T04:25:55Z" finished-at="2021-03-16T04:25:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_login_page_form_elements -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1712" started-at="2021-03-16T04:25:58Z" finished-at="2021-03-16T04:25:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="7246" started-at="2021-03-16T04:25:59Z" finished-at="2021-03-16T04:26:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_user_input()[pri:3, instance:login.LoginTest@239963d8]" name="Verify_user_input" duration-ms="374" started-at="2021-03-16T04:26:06Z" finished-at="2021-03-16T04:26:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_user_input -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1569" started-at="2021-03-16T04:26:07Z" finished-at="2021-03-16T04:26:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="8858" started-at="2021-03-16T04:26:08Z" finished-at="2021-03-16T04:26:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_that_Username_Password_has_valid_placeholder()[pri:4, instance:login.LoginTest@239963d8]" name="Verify_that_Username_Password_has_valid_placeholder" duration-ms="748" started-at="2021-03-16T04:26:17Z" finished-at="2021-03-16T04:26:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_Username_Password_has_valid_placeholder -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1503" started-at="2021-03-16T04:26:18Z" finished-at="2021-03-16T04:26:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="7389" started-at="2021-03-16T04:26:20Z" finished-at="2021-03-16T04:26:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_that_Password_is_masked()[pri:5, instance:login.LoginTest@239963d8]" name="Verify_that_Password_is_masked" duration-ms="634" started-at="2021-03-16T04:26:27Z" finished-at="2021-03-16T04:26:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_Password_is_masked -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1273" started-at="2021-03-16T04:26:28Z" finished-at="2021-03-16T04:26:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="8753" started-at="2021-03-16T04:26:29Z" finished-at="2021-03-16T04:26:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_no_input_user()[pri:6, instance:login.LoginTest@239963d8]" name="Verify_no_input_user" duration-ms="202" started-at="2021-03-16T04:26:38Z" finished-at="2021-03-16T04:26:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_no_input_user -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1565" started-at="2021-03-16T04:26:38Z" finished-at="2021-03-16T04:26:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:login.LoginTest@239963d8]" name="setup" is-config="true" duration-ms="7526" started-at="2021-03-16T04:26:39Z" finished-at="2021-03-16T04:26:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_no_input_password()[pri:7, instance:login.LoginTest@239963d8]" name="Verify_no_input_password" duration-ms="357" started-at="2021-03-16T04:26:47Z" finished-at="2021-03-16T04:26:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_no_input_password -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.LoginTest@239963d8]" name="teardownend" is-config="true" duration-ms="1638" started-at="2021-03-16T04:26:47Z" finished-at="2021-03-16T04:26:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:login.LoginTest@239963d8]" name="teardown" is-config="true" duration-ms="333" started-at="2021-03-16T04:26:49Z" finished-at="2021-03-16T04:26:49Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="teardown" is-config="true" duration-ms="282" started-at="2021-03-16T08:25:31Z" finished-at="2021-03-16T08:25:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- login.LoginTest -->
+      </class> <!-- login.SchemaProfilePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

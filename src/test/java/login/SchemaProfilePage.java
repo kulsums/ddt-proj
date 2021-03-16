@@ -20,22 +20,24 @@ public class SchemaProfilePage extends TestBase {
 		init();
 		activebrwser.get("https://investica.com/");
 		activebrwser.sync();
-		extent_reporting.initializeTestcase(Thread.currentThread().getStackTrace()[1].getClassName());
+		//extent_reporting.initializeTestcase(Thread.currentThread().getStackTrace()[1].getMethodName());
 		demo = new Investica();
 	}
 	
 	@Test(priority = 1)
 	public void Verify_presence_of_search_icon_on_home_page() {
+		extent_reporting.initializeTestcase("Verify_presence_of_search_icon_on_home_page");
 		try {
 			if (activebrwser.elementIsDisplayed(demo.search_icon)) {
 				Assert.assertTrue(true);
+				extent_reporting.executeReport("Verify presence of search icon", "PASS");
 			}
 			
 		} catch (Exception e) {
 		
 		}
 	}
-	
+	/*
 	@Test(priority = 2)
 	public void Verify_placeholder_text_search_box() {
 		try {
@@ -176,7 +178,7 @@ public class SchemaProfilePage extends TestBase {
 		}
 	}
 	
-	
+*/	
 	@AfterMethod
 	public void teardownend() {
 		activebrwser.closebrowser();
