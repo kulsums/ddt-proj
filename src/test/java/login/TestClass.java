@@ -1,4 +1,4 @@
-package signup;
+package login;
 
 import org.testng.annotations.Test;
 
