@@ -21,6 +21,17 @@ public class DemoBlaze extends TestBase {
 	public WebElement signUp_btn;
 	
 	
+	/********************************************About us***************************************************/
+	
+	@FindBy (xpath="//a[text()='About us']")
+	public WebElement aboutus;
+	
+	@FindBy (xpath="//h5[text()='About us']")
+	public WebElement aboutusheading;
+	
+	@FindBy (xpath="//*[@id='videoModal']/div/div/div[3]/button")
+	public WebElement closeaboutus_btn;
+	
 	public DemoBlaze() {
 		PageFactory.initElements(driver, this);
 	}

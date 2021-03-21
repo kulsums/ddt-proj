@@ -1,187 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56045" started-at="2020-03-08T11:20:10Z" finished-at="2020-03-08T11:21:06Z">
+  <suite name="Default suite" duration-ms="13871" started-at="2021-03-16T08:25:18Z" finished-at="2021-03-16T08:25:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56045" started-at="2020-03-08T11:20:10Z" finished-at="2020-03-08T11:21:06Z">
-      <class name="signup.SignUpTestWithArrayOfString">
-        <test-method status="PASS" signature="testStart()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="testStart" is-config="true" duration-ms="167" started-at="2020-03-08T11:20:10Z" finished-at="2020-03-08T11:20:10Z">
+    <test name="Default test" duration-ms="13871" started-at="2021-03-16T08:25:18Z" finished-at="2021-03-16T08:25:31Z">
+      <class name="login.SchemaProfilePage">
+        <test-method status="PASS" signature="testStart()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="testStart" is-config="true" duration-ms="239" started-at="2021-03-16T08:25:17Z" finished-at="2021-03-16T08:25:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="6986" started-at="2020-03-08T11:20:11Z" finished-at="2020-03-08T11:20:18Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="setup" is-config="true" duration-ms="11470" started-at="2021-03-16T08:25:18Z" finished-at="2021-03-16T08:25:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="6932" started-at="2020-03-08T11:20:18Z" data-provider="getUser" finished-at="2020-03-08T11:20:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testkulsum]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testkulsum]]>
-              </value>
-            </param>
-          </params>
-          <exception class="junit.framework.AssertionFailedError">
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertTrue(Assert.java:27)
-at signup.SignUpTestWithArrayOfString.verify_signup_with_set_of_data(SignUpTestWithArrayOfString.java:47)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+        <test-method status="PASS" signature="Verify_presence_of_search_icon_on_home_page()[pri:1, instance:login.SchemaProfilePage@464bee09]" name="Verify_presence_of_search_icon_on_home_page" duration-ms="1127" started-at="2021-03-16T08:25:29Z" finished-at="2021-03-16T08:25:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="1037" started-at="2020-03-08T11:20:25Z" finished-at="2020-03-08T11:20:26Z">
+        </test-method> <!-- Verify_presence_of_search_icon_on_home_page -->
+        <test-method status="PASS" signature="teardownend()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="teardownend" is-config="true" duration-ms="1247" started-at="2021-03-16T08:25:30Z" finished-at="2021-03-16T08:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="5687" started-at="2020-03-08T11:20:26Z" finished-at="2020-03-08T11:20:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="6820" started-at="2020-03-08T11:20:31Z" data-provider="getUser" finished-at="2020-03-08T11:20:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testfatima]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testfatima]]>
-              </value>
-            </param>
-          </params>
-          <exception class="junit.framework.AssertionFailedError">
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertTrue(Assert.java:27)
-at signup.SignUpTestWithArrayOfString.verify_signup_with_set_of_data(SignUpTestWithArrayOfString.java:47)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="1112" started-at="2020-03-08T11:20:38Z" finished-at="2020-03-08T11:20:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="5185" started-at="2020-03-08T11:20:39Z" finished-at="2020-03-08T11:20:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="7120" started-at="2020-03-08T11:20:44Z" data-provider="getUser" finished-at="2020-03-08T11:20:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testmaroof]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testmaroof]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="1232" started-at="2020-03-08T11:20:51Z" finished-at="2020-03-08T11:20:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="setup" is-config="true" duration-ms="5002" started-at="2020-03-08T11:20:53Z" finished-at="2020-03-08T11:20:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_signup_with_set_of_data(java.lang.String, java.lang.String)[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="verify_signup_with_set_of_data" duration-ms="7040" started-at="2020-03-08T11:20:58Z" data-provider="getUser" finished-at="2020-03-08T11:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[k523]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[k523]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signup_with_set_of_data -->
-        <test-method status="PASS" signature="teardownend()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardownend" is-config="true" duration-ms="1246" started-at="2020-03-08T11:21:05Z" finished-at="2020-03-08T11:21:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownend -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:signup.SignUpTestWithArrayOfString@57baeedf]" name="teardown" is-config="true" duration-ms="364" started-at="2020-03-08T11:21:06Z" finished-at="2020-03-08T11:21:06Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:login.SchemaProfilePage@464bee09]" name="teardown" is-config="true" duration-ms="282" started-at="2021-03-16T08:25:31Z" finished-at="2021-03-16T08:25:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- signup.SignUpTestWithArrayOfString -->
+      </class> <!-- login.SchemaProfilePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

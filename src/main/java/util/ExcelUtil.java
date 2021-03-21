@@ -11,8 +11,27 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelUtil 
-{
+public class ExcelUtil{
+	
+	static ExcelUtility reader;
+	
+	public static ArrayList<Object[]> getDataFromExcel(){
+		ArrayList<Object[]> myData = new ArrayList<Object[]>();
+		try {
+			reader = new ExcelUtility("C://Users//ksiddiqu//OneDrive - Capgemini//Documents//New folder//TestData.xlsx");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		for (int rowNum = 2; rowNum <= reader.getRowCount("login"); rowNum++) {
+			String userid = reader.getCellData("login", "UserName", rowNum);
+			String password = reader.getCellData("login", "Password", rowNum);
+			
+			Object ob[] = {userid, password};
+			myData.add(ob);
+			
+		}
+		return myData;
+	}
     
 	public static String[][] getUserName(String sheetname) throws IOException {
 		FileInputStream file = new FileInputStream("C://Users//ksiddiqu//OneDrive - Capgemini//Documents//New folder//TestData.xlsx");
@@ -63,6 +82,7 @@ public class ExcelUtil
 		workbook.write(file);
 		file.close();
 	}
+	
 	
 	
 	

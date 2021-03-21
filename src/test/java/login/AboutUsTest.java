@@ -1,4 +1,4 @@
-package signup;
+package login;
 
 import java.io.IOException;
 
@@ -8,12 +8,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.TestBase;
+import junit.framework.Assert;
 import pages.DemoBlaze;
 import util.ExcelUtil;
 import util.WebBrowser;
 import util.extent_reporting;
 
-public class SignUpTest extends TestBase {
+public class AboutUsTest extends TestBase {
     
 	WebBrowser activebrwser = new WebBrowser();
 	DemoBlaze demo;
@@ -27,18 +28,23 @@ public class SignUpTest extends TestBase {
 		demo = new DemoBlaze();
 	}
 	
-	@DataProvider
-	public Object[][] getUser() throws IOException {
-		Object data[][] = ExcelUtil.getUserName_("login");
-		return data;
+	@Test
+	public void verify_about_us_modal_is_displayed() throws IOException {
+		activebrwser.click(demo.aboutus, "Click link about us");
+		Assert.assertTrue(activebrwser.elementIsDisplayed(demo.aboutusheading));
 	}
-    
-	@Test(dataProvider="getUser")
-	public void verify_signup_with_set_of_data(String username, String password) throws IOException {
-		activebrwser.click(demo.signup_link);
-		activebrwser.sendKeys(demo.user_text, username);
-		activebrwser.wait(2);
-		activebrwser.sendKeys(demo.pwd_text, password);
+	
+	@Test
+	public void verify_user_is_able_to_close_about_us_modal() throws IOException {
+		activebrwser.click(demo.aboutus, "Click link about us");
+		if (activebrwser.elementIsDisplayed(demo.aboutusheading)) {
+			activebrwser.click(demo.closeaboutus_btn, "Close about us modal");
+			if (!activebrwser.elementIsDisplayed(demo.closeaboutus_btn)) {
+				Assert.assertTrue(true);
+			} else {
+				Assert.assertTrue(false);
+			}
+		}
 	}
 	
 	@AfterMethod
